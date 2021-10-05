@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>СТРАНИЦА_1</title>
+
+<meta charset="UTF-8">
+
+<style>
+a { 
+    text-decoration: none;
+   } 
+*{
+  box-sizing: border-box;
+}
+
+@media all and (orientation: landscape), screen and (min-width: 1080px) {
+.row {
+  display: flex;
+}
+}
+
+@media all and (orientation: portrait), screen and (max-width: 1080px) {
+.row {
+  display: flex;
+  flex-direction: column;
+}
+}
+
+.column1 {
+  flex: 30%;
+  padding: 10px;
+  height: 30%;
+  background-color:#543964;
+  margin: 0 10px 10px 0;
+}
+.column2 {
+  flex: 60%;
+  padding: 10px;
+  height: 100%;
+  background-color:#bbb;
+  margin: 0 0 10px 0;
+}
+.column3 {
+  flex: 20%;
+  padding: 1px;
+  height: 100%;
+  background-color:#bbb;
+  margin: 0 10px 10px 0;
+}
+
+.figure1 {
+    background: #1e1424;
+    padding: 10px;
+    width: 100%;
+    margin: 0 10px 10px 0;
+    
+   }
+   
+.figure2 {
+    background: #ba9fc9;
+    padding: 10px;
+    width: 100%;
+    margin: 10px 10px 10px 0;
+   }
+   
+.figure3 {
+    min-width: 750px;
+    background: #ba9fc9;
+    width: 100%;
+	height: 20%;
+    margin: 10px 0 10px 0;
+   }
+
+.imag {
+  text-align: center;
+}
+</style>
+
+</head>
+<body>
+<div class = "row">
+  <div class = "figure3">
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <col width="50%" valign="top">
+        <col width="25%" valign="top">
+		<col width="12%" valign="top">
+		<tr>
+		  <td valign="top"><p align="left"><font size="7" color="#1e1424" face="algerian" style = "font-family: algerian, garamond;"> &nbsp; Antisocialist</font></p></td>
+		  <td valign="center-right"><a href = ""><p align="right"><font size="6" color="#6f4a85" face="Palatino Linotype"> Регистрация &nbsp; </font></a></p></td>
+		  <td valign="center-right"><a href = ""><p align="right"><font size="6" color="#6f4a85" face="Palatino Linotype"> Вход &nbsp; </font></a></p></td>
+		</tr>
+	</table>
+  </div>
+</div>
+<div class="row">
+  <div class="column3">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <col width="100%" valign="top">
+		<tr><p align="left"><a href = ""><font size="4" color="#1e1424" face="Palatino Linotype"> &nbsp; Профиль</font></a></p></tr>
+		<tr><p align="left"><a href = ""><font size="4" color="#1e1424" face="Palatino Linotype"> &nbsp; Друзья</font></a></p></tr>
+		<tr><p align="left"><a href = ""><font size="4" color="#1e1424" face="Palatino Linotype"> &nbsp; Фотографии</font></a></p></tr>
+		<tr><p align="left"><a href = ""><font size="4" color="#1e1424" face="Palatino Linotype"> &nbsp; Сообщения</font></a></p></tr>
+	</table>
+  </div>
+  <div class="column1">
+    <div class="imag">
+	  <img src="https://i.pinimg.com/originals/b3/ac/f2/b3acf2df48fcaf44cd7e3be70fdba53d.jpg" width="90%" height="30%" alt="текст">
+	  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <col width="50%" valign="top">
+		<col width="50%" valign="top">
+		<tr><td><p align="center"><a href = ""><font size="3" color="#1e1424" face="Palatino Linotype"> &nbsp; Добавить в друзья </font></a></p></td>
+		<td><p align="center"><a href = ""><font size="3" color="#1e1424" face="Palatino Linotype"> &nbsp; Написать сообщение </font></a></p></td></tr>
+	</table>
+	</div>
+	
+	
+  </div>
+  <div class="column2">
+    <div class="figure1">
+	  <p align="left"><font size="7" color="#6f4a85" face="Garamond">Василий</font></p>
+	  <p align="left"><font size="6" color="#6f4a85" face="Garamond">г. Санкт-Петербург</font></p>
+	</div>
+	
+	<div class="figure2">
+		<font size="3" color="gray" face="Calibri">Напишите что-нибудь ... </font>
+	</div>
+	
+	<div class="figure2">
+	  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <col width="10%" valign="top">
+        <col width="90%" valign="top">
+        <tr>
+          <td valign="top"><img src="https://pbs.twimg.com/media/ENo5X-pW4AAyEDt.jpg" width="50px" height="50px" alt="текст"></td>
+          <td>
+		    <p><a href = "page_2.html"><font size="5" color="black" face="Garamond">Антон</font></a></p>
+			<font size="3" color="black" face="Calibri"><p>Взя́тие Басти́лии (фр. Prise de la Bastille) — один из центральных 
+			эпизодов Великой французской революции, штурм крепости-тюрьмы Бастилия 14 июля 1789 года.</p>
+			Крепость построена в 1382 году. Она должна была служить укреплением на подступах к столице. 
+			Вскоре она стала выполнять функции тюрьмы, преимущественно для политических заключённых. 
+			За 400 лет среди узников Бастилии было немало знаменитых личностей. Для многих поколений 
+			французов крепость была символом всевластия королей. 
+			К 1780 году тюрьма практически перестала использоваться.</font>
+		  </td>
+        </tr>
+      </table>
+	</div>
+	
+	<div class="figure2">
+	  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <col width="10%" valign="top">
+        <col width="90%" valign="top">
+        <tr>
+          <td valign="top"><img src="https://i.pinimg.com/736x/85/f9/d9/85f9d9d295681c97c45ada623396bb5c.jpg" width="50px" height="50px" alt="текст"></td>
+          <td>
+		    <p><a href = "page_3.html"><font size="5" color="black" face="Garamond">Джон</font></a></p>
+			<font size="3" color="black" face="Calibri"><p>Термидорианский переворот — государственный переворот, произошедший 27 июля 1794 года 
+			(9 термидора II года по республиканскому календарю) во Франции и ставший одним из ключевых событий Великой французской революции.</p>
+			<p>Переворот привёл к аресту и казни Максимилиана Робеспьера и его сторонников, одновременно положил конец эпохе террора, а заодно и революционных 
+			преобразований. Открыл период Термидорианской реакции.</p>
+			Само событие участники и победители определяли как «Революция 9 термидора» (фр. révolution du 9 Thermidor) или «восстание 9 термидора» 
+			(фр. journée du 9 Thermidor). Позже в историографии революции появились определения событий 9 термидора как «государственного переворота» 
+			(фр. coup d'état), в российской революционной среде использовалось выражение «контрреволюционный термидорианский переворот».
+			</font>
+		  </td>
+        </tr>
+      </table>
+	</div>
+	
+  </div>
+  
+</div>
+
+</body>
+</html>
