@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+     <head>
+	 
+	 <script type="text/javascript">
+	    var a = 0;
+		var op = 0;
+		
+		function btn_inpute(i) {
+		  let btn = document.getElementById("btn" + i);
+		  var b = Number(document.getElementById('input').value);
+		  var res = 10 * b + Number(btn.value);
+		  document.getElementById('input').value = res;
+		}
+		
+		function btn_plus() {
+		  switch (op) {
+		  case 0:
+		    a = a + Number(document.getElementById('input').value); break;
+		  case 1:
+		    a = a - Number(document.getElementById('input').value); break;
+		  case 2:
+		    a = a * Number(document.getElementById('input').value); break;
+		  case 3:
+		    a = a / Number(document.getElementById('input').value); break;
+		  }
+		  op = 0;
+		  document.getElementById('input').value = '';
+		}
+		
+		function btn_minus() {
+		  switch (op) {
+		  case 0:
+		    a = a + Number(document.getElementById('input').value); break;
+		  case 1:
+		    a = a - Number(document.getElementById('input').value); break;
+		  case 2:
+		    a = a * Number(document.getElementById('input').value); break;
+		  case 3:
+		    a = a / Number(document.getElementById('input').value); break;
+		  }
+		  op = 1;
+		  document.getElementById('input').value = '';
+		}
+		
+		function btn_multiply() {
+		  switch (op) {
+		  case 0:
+		    a = a + Number(document.getElementById('input').value); break;
+		  case 1:
+		    a = a - Number(document.getElementById('input').value); break;
+		  case 2:
+		    a = a * Number(document.getElementById('input').value); break;
+		  case 3:
+		    a = a / Number(document.getElementById('input').value); break;
+		  }
+		  op = 2;
+		  document.getElementById('input').value = '';
+		}
+		
+		function btn_divide() {
+		  switch (op) {
+		  case 0:
+		    a = a + Number(document.getElementById('input').value); break;
+		  case 1:
+		    a = a - Number(document.getElementById('input').value); break;
+		  case 2:
+		    a = a * Number(document.getElementById('input').value); break;
+		  case 3:
+		    a = a / Number(document.getElementById('input').value); break;
+		  }
+		  op = 3;
+		  document.getElementById('input').value = '';
+		}
+		
+		function btn_res() {
+		  switch (op) {
+		  case 0:
+		    a = a + Number(document.getElementById('input').value); break;
+		  case 1:
+		    a = a - Number(document.getElementById('input').value); break;
+		  case 2:
+		    a = a * Number(document.getElementById('input').value); break;
+		  case 3:
+		    a = a / Number(document.getElementById('input').value); break;
+		  }
+		  op = 0;
+		  document.getElementById('input').value = a;
+		}
+		
+		function btn_AC() {
+		  a = 0;
+		  op = 0;
+		  document.getElementById('input').value = a;
+		}
+	 </script>
+	 
+     <meta charset="utf-8">
+     <style>
+		  .wrapper {
+		  margin: 0 0 0 0;
+		  width: 236px;
+		  height: 360px;
+		  background: url(https://i.pinimg.com/236x/8b/62/32/8b6232a255f2b5d68d5b16f7d8d6ed34--green-plants-green-leaves.jpg);
+		  border-radius: 10px;
+		  border: 1px solid #949493;
+		  box-shadow: 3px 3px 7px #000;
+		  }
+		  
+		  .main {
+		  margin: 0 auto ;
+		  margin-top: 5px;
+		  width: 220px;
+		  }
+		  
+		  .display input {
+		  background: #ccc;
+		  margin: 18px 18px 18px 14px;
+		  width: 200px;
+		  height: 54px;
+		  border-radius: 5px;
+		  font-size: 24px;
+		  }
+		  
+		  .buttons1 input {
+		  background: #a0ba8a;
+		  margin: 113px 0 0 4px;
+		  overflow: hidden;
+		  width: 50px;
+		  height: 30px;
+		  border-radius: 5px;
+		  font-size: 21px;
+		  font-family: Garamond;
+		  }
+		  
+		  .buttons2 input {
+		  background: #a0ba8a;
+		  margin: 4.5px 0 0 4px;
+		  overflow: hidden;
+		  width: 50px;
+		  height: 30px;
+		  border-radius: 5px;
+		  font-size: 21px;
+		  font-family: Garamond;
+		  }
+	 </style>
+     <title>калькулятор</title>
+     </head>
+     <body>
+          <div class="wrapper">
+		    <div class="display input">
+			  <input type="text" id="input" value="0">
+			</div>
+			<table id="table">
+			  <tr class="buttons1">
+			    <td><input type="button" id="btn1" value="1" onclick="btn_inpute(1);"></td>
+				<td><input type="button" id="btn2" value="2" onclick="btn_inpute(2);"></td>
+				<td><input type="button" id="btn3" value="3" onclick="btn_inpute(3);"></td>
+				<td><input type="button" value="+" onclick="btn_plus();"></td>
+			  </tr>
+			  <tr class="buttons2">
+			    <td><input type="button" id="btn4" value="4" onclick="btn_inpute(4);"></td>
+				<td><input type="button" id="btn5" value="5" onclick="btn_inpute(5);"></td>
+				<td><input type="button" id="btn6" value="6" onclick="btn_inpute(6);"></td>
+				<td><input type="button" value="-" onclick="btn_minus();"></td>
+			  </tr>
+			  <tr class="buttons2">
+			    <td><input type="button" id="btn7" value="7" onclick="btn_inpute(7);"></td>
+				<td><input type="button" id="btn8" value="8" onclick="btn_inpute(8);"></td>
+				<td><input type="button" id="btn9" value="9" onclick="btn_inpute(9);"></td>
+				<td><input type="button" value="*" onclick="btn_multiply();"></td>
+			  </tr>
+			  <tr class="buttons2">
+			    <td><input type="button" value="AC" onclick="btn_AC();"></td>
+				<td><input type="button" id="btn0" value="0" onclick="btn_inpute(0);"></td>
+				<td><input type="button" value="=" onclick="btn_res();"></td>
+				<td><input type="button" value="/" onclick="btn_divide();"></td>
+			  </tr>
+			</table>
+		  </div>
+     </body>
+</html>
