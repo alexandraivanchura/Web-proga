@@ -2,11 +2,15 @@
 <html>
      <head>
 	 
-	 <script type="text/javascript">
-	    var a = 0;
+	 <script>
+	        var a = 0;
 		var op = 0;
+		var isitres = true;
 		
 		function btn_inpute(i) {
+		  if (isitres)
+		     btn_AC();
+		  isitres = false;
 		  let btn = document.getElementById("btn" + i);
 		  var b = Number(document.getElementById('input').value);
 		  var res = 10 * b + Number(btn.value);
@@ -86,6 +90,7 @@
 		  }
 		  op = 0;
 		  document.getElementById('input').value = a;
+		  isitres = true;
 		}
 		
 		function btn_AC() {
@@ -97,7 +102,7 @@
 	 
      <meta charset="utf-8">
      <style>
-		  .wrapper {
+		  .bck {
 		  margin: 0 0 0 0;
 		  width: 236px;
 		  height: 360px;
@@ -105,12 +110,6 @@
 		  border-radius: 10px;
 		  border: 1px solid #949493;
 		  box-shadow: 3px 3px 7px #000;
-		  }
-		  
-		  .main {
-		  margin: 0 auto ;
-		  margin-top: 5px;
-		  width: 220px;
 		  }
 		  
 		  .display input {
@@ -147,7 +146,7 @@
      <title>калькулятор</title>
      </head>
      <body>
-          <div class="wrapper">
+          <div class="bck">
 		    <div class="display input">
 			  <input type="text" id="input" value="0">
 			</div>
